@@ -4,9 +4,7 @@
     - name: Start the Online Banking node service
       service: 
         name: onlinebanking
-        state: stopped
-
-    - debug: var=finalout.stdout_lines
+        state: started
 
     - debug:
         msg: Access Online Banking using http://sample.ba.x.y.example.com:3000
