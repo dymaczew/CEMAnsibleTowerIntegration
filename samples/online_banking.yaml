@@ -2,8 +2,9 @@
 - hosts: all
   tasks:
     - name: Start the Online Banking node service
-      service: onlinebanking
-      state: stopped
+      service: 
+        name: onlinebanking
+        state: stopped
 
     - debug: var=finalout.stdout_lines
 
